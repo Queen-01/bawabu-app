@@ -9,27 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Baawabu">
-        <activity
-            android:name=".ui.CheckOut"
-            android:exported="true" />
-        <activity
-            android:name=".ui.Register"
-            android:exported="true" />
-        <activity
-            android:name=".ui.CheckIn"
-            android:exported="true"
-            android:label="@string/title_activity_check_in"
-            android:theme="@style/Theme.Baawabu.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.queen.baawabu.ui.MainActivity"></meta-data>
-        </activity>
         <activity
             android:name=".ui.MainActivity"
             android:exported="true">
@@ -38,6 +18,29 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.CheckOut"
+            android:exported="true" />
+        <activity
+            android:name=".ui.Register"
+            android:exported="true"><meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.queen.baawabu.ui.MainActivity"></meta-data>
+        </activity>
+
+        <activity
+            android:name=".ui.CheckIn"
+            android:exported="true"
+            android:label="@string/title_activity_check_in">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.queen.baawabu.ui.MainActivity"></meta-data>
         </activity>
     </application>
 
